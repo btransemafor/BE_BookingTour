@@ -1,0 +1,38 @@
+[
+  {
+    "keywords": ["quy trình mua", "mua hàng", "cách mua", "làm sao mua", "order", "đặt hàng", "checkout"],
+    "answer": "Quy trình mua hàng gồm 4 bước:\n1. Chọn sản phẩm và thêm vào giỏ hàng\n2. Chọn phương thức thanh toán và địa chỉ giao hàng\n3. Xác nhận đơn hàng\n4. Theo dõi trạng thái đơn trong tài khoản cá nhân.\nBạn có thể check thêm nhiều câu hỏi trong mục FAQ."
+  },
+  {
+    "keywords": ["xóa tài khoản", "xóa acc", "xóa profile", "hủy tài khoản", "delete account", "deactive"],
+    "answer": "Để xóa tài khoản bạn có thể tự xóa tài khoản của mình trong setting, hoặc liên hệ admin để được hỗ trợ qua phần contact.\nBạn có thể check thêm nhiều câu hỏi trong mục FAQ."
+  },
+  {
+    "keywords": ["hủy đơn", "hủy đơn hàng", "cancel order", "hủy order", "không muốn mua"],
+    "answer": "Bạn có thể hủy đơn trong tình huống sau: vòng 1 giờ nếu shop chúng tôi chưa chấp nhận đơn hàng hoặc có 10 phút để hủy bất kỳ đơn nào kể từ khi đặt tại mục 'Đơn hàng của tôi'. Sau thời gian này, đơn sẽ được xử lý và không thể hủy.\nBạn có thể check thêm nhiều câu hỏi trong mục FAQ."
+  },
+  {
+    "keywords": ["phương thức vận chuyển", "vận chuyển", "giao hàng", "shipping", "delivery", "ship"],
+    "answer": "Chúng tôi hiện có 4 kiểu vận chuyển : Pickup, Standard Delivery, Express Delivery, Scheduled Delivery - đừng liệt kê thời gian cụ thể dự kiến nhé.\nBạn có thể check thêm nhiều câu hỏi trong mục FAQ."
+  },
+  {
+    "keywords": ["thanh toán", "payment", "trả tiền", "phương thức thanh toán", "pay"],
+    "answer": "Chúng tôi hỗ trợ các phương thức thanh toán:\n- COD (thanh toán khi nhận hàng)\n- Chuyển khoản ngân hàng\n- Ví điện tử (Momo – chưa triển khai)\n- Quét mã QR.\nBạn có thể check thêm nhiều câu hỏi trong mục FAQ."
+  },
+  {
+    "keywords": ["tài khoản", "đăng nhập", "login", "mật khẩu", "password", "quên mật khẩu"],
+    "answer": "Hỗ trợ tài khoản:\n- Quên mật khẩu: sử dụng chức năng 'Quên mật khẩu' trên trang đăng nhập\n- Không đăng nhập được: kiểm tra email/số điện thoại và mật khẩu\n- Tài khoản bị khóa: liên hệ CSKH để được hỗ trợ.\nBạn có thể check thêm nhiều câu hỏi trong mục FAQ."
+  },
+  {
+    "keywords": ["khuyến mãi", "giảm giá", "coupon", "voucher", "discount", "sale"],
+    "answer": "Đăng ký tài khoản sẽ nhận voucher người mới. Thỉnh thoảng có thể được tặng voucher. Đăng ký nhận thông báo để không bỏ lỡ ưu đãi.\n- Voucher có thời hạn sử dụng. Mỗi ngày sẽ có voucher ngon, nhanh tay nhé!\nBạn có thể check thêm nhiều câu hỏi trong mục FAQ."
+  },
+  {
+    "keywords": ["liên hệ", "contact", "hỗ trợ", "support", "cskh"],
+    "answer": "Thông tin liên hệ CSKH:\n- Hotline: 0338498306 (8:00-22:00)\n- Email: omgniceten@gmail.com hoặc omgnicesupport@gmail.com.\nBạn có thể check thêm nhiều câu hỏi trong mục FAQ."
+  },
+  {
+    "keywords": ["theo dõi đơn", "tracking", "trạng thái đơn", "đơn hàng đâu"],
+    "answer": "Để theo dõi đơn hàng:\n1. Đăng nhập tài khoản\n2. Vào mục 'Đơn hàng của tôi'\n3. Xem chi tiết trạng thái và thông tin vận chuyển.\nBạn có thể check thêm nhiều câu hỏi trong mục FAQ."
+  }
+]

@@ -1,0 +1,11 @@
+
+{
+    "development": {
+      "username": "omgnice",
+      "password": "omgnice123",
+      "database": "omgnice_ecommerce_app",
+      "host":    "localhost" ,
+      "dialect": "postgres"
+  }
+
+}
