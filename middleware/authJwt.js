@@ -1,3 +1,17 @@
+const jwt = require('jsonwebtoken');
+
+// Giải mã token (decode, không verify)
+function decodeToken(token) {
+    try {
+        return jwt.decode(token);
+    } catch (err) {
+        return null;
+    }
+}
+
+module.exports = {
+    decodeToken
+};
 const jwt = require('jsonwebtoken'); 
 require('dotenv').config(); 
 

@@ -34,7 +34,8 @@ app.use('/api/promotions', require('./routes/promotion'));
 app.use('/api/statistics', require('./routes/statistics'));
 app.use('/api/banners/', require('./routes/banners'))
 app.use('/api/categories/', require('./routes/tour-category')); 
-
+app.use('/api/bookings/', require('./routes/booking'))
+app.use('/api/coupons', require('./routes/coupon'));
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).json({ 

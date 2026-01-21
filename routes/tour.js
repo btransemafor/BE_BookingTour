@@ -602,6 +602,7 @@ router.get('/:id', async (req, res) => {
         ts.price_override,
         ts.available_slots,
         COALESCE(ts.booked_slots, 0) as booked_slots,
+        ts.total_slots,
         ts.status
        FROM tour_schedules ts
        WHERE ts.tour_id = $1 AND ts.status = 'OPEN' AND ts.start_date >= CURRENT_DATE
@@ -679,6 +680,7 @@ router.get('/:id', async (req, res) => {
           price_override: sch.price_override ? parseFloat(sch.price_override) : null,
           available_slots: sch.available_slots,
           booked_slots: sch.booked_slots,
+          total_slots: sch.total_slots, 
           status: sch.status
         }))
       }
