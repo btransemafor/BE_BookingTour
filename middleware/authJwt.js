@@ -1,5 +1,6 @@
+const { auth } = require('firebase-admin');
 const jwt = require('jsonwebtoken');
-
+const secret = process.env.JWT_SECRET_KEY;
 // Giải mã token (decode, không verify)
 function decodeToken(token) {
     try {
@@ -9,10 +10,7 @@ function decodeToken(token) {
     }
 }
 
-module.exports = {
-    decodeToken
-};
-const jwt = require('jsonwebtoken'); 
+
 require('dotenv').config(); 
 
 function generateAccessToken(dataUser) {
@@ -58,8 +56,39 @@ function isAdmin(req, res, next) {
     next();
 }
 
+
+// Dong bo BE A 
+
+
+function authenticateJWT(req, res, next) {
+    // Log toàn bộ headers để debug
+    console.log('HEADERS:', req.headers);
+    const authHeader = req.headers.authorization;
+    console.log('AUTH_HEADER:', authHeader);
+
+    if (authHeader && authHeader.startsWith('Bearer ')) {
+        const token = authHeader.split(' ')[1];
+        console.log('TOKEN:', token);
+        jwt.verify(token, secret, (err, user) => {
+            if (err) {
+                console.log('JWT VERIFY ERROR:', err);
+                return res.sendStatus(403);
+            }
+            console.log("info", user )
+            console.log('User_id', user.sub)
+            req.user = user.sub; // user chứa user_id, email, ...
+            next();
+        });
+    } else {
+        console.log('NO AUTH HEADER OR WRONG FORMAT');
+        res.sendStatus(401);
+    }
+}
+
 module.exports = {
     generateAccessToken,
     authenticateToken,
-    isAdmin
+    isAdmin, 
+    decodeToken, 
+    authenticateJWT
 };
